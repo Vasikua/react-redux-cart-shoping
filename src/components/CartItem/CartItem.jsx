@@ -12,7 +12,7 @@ export default function CartItem({ item }) {
     <div className=" w-[550px] flex items-center justify-between p-5 bg-red-500 mt-2 mb-2 rounded-xl">
       <div className="flex p-3">
         <img
-          className="h-28 rounded-lg"
+          className="h-28 w-20 rounded-lg"
           src={item.image || "placeholder-image-url"}
           alt={item.title || "Item Image"}
         />
