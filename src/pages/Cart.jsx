@@ -31,7 +31,7 @@ export default function Cart() {
               </h2>
               <p>
                 <span className="text-gray-800 font-bold">
-                  Total Amount: {TotalAmount}
+                  Total Amount: {TotalAmount.toFixed(2)}
                 </span>
               </p>
               <p>
@@ -43,13 +43,13 @@ export default function Cart() {
           </div>
         </div>
       ) : (
-        <div className="min-h-[80hv] flex flex-col itemd-center justify-center">
-          <h1 className="text-gray-800 font-bolt text-xl mb-2">
+        <div className="min-h-[80hv] flex flex-col items-center justify-center">
+          <h1 className="text-gray-800 font-bold text-xl mb-2">
             Your cart is empty
           </h1>
           <Link to="/">
             <button className="bg-red-950 text-white border-2 rounded-lg font-bold p-4">
-              Go to shoping
+              Go to shopping
             </button>
           </Link>
         </div>

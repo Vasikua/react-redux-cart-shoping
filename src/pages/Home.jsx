@@ -29,7 +29,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container ml-auto mr-auto">
       {loading ? (
         <div className="min-h-screen w-full flex justify-center items-center">
           <Circles
